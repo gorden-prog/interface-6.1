@@ -1,0 +1,523 @@
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	white-space: nowrap;
+	border: 0
+}
+
+.card-visual {
+	background: var(--card);
+	padding: 20px 16px 8px
+}
+
+.card-visual img {
+	mix-blend-mode: normal;
+	transform: scale(var(--tire-scale,1))
+}
+
+.card:hover .card-visual img {
+	transform: scale(calc(var(--tire-scale,1)*1.04))
+}
+
+img[src$="tire-winter-cutout.png"],img[src$="tire-all-season-cutout.png"] {
+	--tire-scale: .985
+}
+
+.product-photo {
+	background: var(--card);
+	padding: 28px 28px 55px
+}
+
+.product-photo>img {
+	max-height: 560px;
+	object-fit: contain;
+	mix-blend-mode: normal;
+	transform: scale(var(--tire-scale,1))
+}
+
+.product-photo .image-note {
+	color: var(--muted)
+}
+
+.cart-row img {
+	background: var(--card);
+	padding: 7px;
+	mix-blend-mode: normal;
+	transform: scale(var(--tire-scale,1))
+}
+
+.card>.favorite-button {
+	color: var(--muted)
+}
+
+.card>.favorite-button:hover {
+	background: var(--hover)
+}
+
+.card>.favorite-button.selected {
+	color: var(--accent)
+}
+
+@media (max-width:767px) {
+	.product-photo {
+		padding: 18px 18px 55px
+	}
+	.product-photo .image-note {
+		font-size: 10px;
+		bottom: 12px
+	}
+}
+
+.service-preview {
+	border-bottom: 1px solid var(--line)
+}
+
+.service-preview-grid {
+	display: grid;
+	grid-template-columns: repeat(3,minmax(0,1fr));
+	gap: 16px
+}
+
+.service-preview-card {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	background: var(--section);
+	border: 1px solid var(--line);
+	border-radius: var(--radius);
+	padding: 27px;
+	transition: background .2s,border-color .2s
+}
+
+.service-preview-card:hover {
+	background: var(--hover);
+	border-color: var(--muted)
+}
+
+.service-number {
+	font-size: 11px;
+	letter-spacing: 1.5px;
+	color: var(--muted)
+}
+
+.service-preview-card h3 {
+	font-size: 22px;
+	line-height: 1.35;
+	margin-top: 30px;
+	max-width: 260px
+}
+
+.service-preview-bottom {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	flex-wrap: wrap;
+	margin-top: auto;
+	padding-top: 26px
+}
+
+.service-preview-bottom p {
+	font-size: 12px;
+	margin-right: auto
+}
+
+.service-preview-bottom strong {
+	font-size: 24px;
+	letter-spacing: -.6px;
+	font-weight: 600;
+	white-space: nowrap
+}
+
+.service-preview-bottom svg {
+	width: 19px;
+	height: 19px;
+	color: var(--muted)
+}
+
+.services-intro {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 32px;
+	padding-bottom: 36px
+}
+
+.services-intro p {
+	max-width: 600px;
+	font-size: 15px;
+	line-height: 1.9
+}
+
+.services-page {
+	padding-bottom: 64px
+}
+
+.services-grid {
+	display: grid;
+	grid-template-columns: repeat(2,minmax(0,1fr));
+	align-items: start;
+	gap: 22px
+}
+
+.service-group {
+	min-width: 0;
+	border: 1px solid var(--line);
+	border-radius: var(--radius-panel);
+	background: var(--section);
+	overflow: hidden
+}
+
+.service-group summary {
+	display: flex;
+	gap: 18px;
+	align-items: center;
+	cursor: pointer;
+	list-style: none;
+	padding: 25px
+}
+
+.service-group summary::-webkit-details-marker {
+	display: none
+}
+
+.service-group summary h2 {
+	font-size: 21px;
+	line-height: 1.35;
+	letter-spacing: -.5px;
+	flex: 1
+}
+
+.service-group summary svg {
+	width: 18px;
+	height: 18px;
+	color: var(--muted);
+	transform: rotate(90deg);
+	transition: transform .2s
+}
+
+.service-group[open] summary svg {
+	transform: rotate(-90deg)
+}
+
+.service-price-list {
+	margin: 0;
+	padding: 0 25px 10px
+}
+
+.service-price-row {
+	display: grid;
+	grid-template-columns: minmax(0,1fr) auto;
+	gap: 22px;
+	padding: 20px 0;
+	border-top: 1px solid var(--line);
+	align-items: start
+}
+
+.service-price-row dt {
+	font-size: 14px;
+	line-height: 1.65
+}
+
+.service-price-row dt span {
+	display: block;
+	color: var(--muted);
+	font-size: 11px;
+	margin-top: 5px
+}
+
+.service-price-row dd {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 600;
+	white-space: nowrap;
+	letter-spacing: -.4px
+}
+
+.service-contact {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 35px;
+	margin-top: 42px;
+	padding: 35px 0;
+	border-top: 1px solid var(--line)
+}
+
+.service-contact h2 {
+	font-size: 32px;
+	line-height: 1.25;
+	margin-top: 15px
+}
+
+.service-contact p {
+	font-size: 13px;
+	max-width: 480px;
+	margin-top: 15px
+}
+
+.service-contact-actions {
+	display: flex;
+	flex-direction: column;
+	gap: 12px
+}
+
+.cart-page {
+	padding-bottom: 64px;
+	min-height: 420px
+}
+
+.cart-page>.empty-state {
+	min-height: 330px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 48px 24px
+}
+
+.cart-page>.empty-state .button {
+	white-space: normal
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	.desktop-nav a[href="#home"] {
+		display: none
+	}
+	.desktop-nav {
+		gap: 14px
+	}
+	.service-preview-card {
+		padding: 22px
+	}
+	.service-preview-card h3 {
+		font-size: 20px
+	}
+	.service-preview-bottom {
+		gap: 8px
+	}
+	.service-preview-bottom strong {
+		font-size: 22px
+	}
+	.services-intro p {
+		font-size: 14px
+	}
+	.service-group summary {
+		padding: 22px;
+		gap: 12px
+	}
+	.service-group summary h2 {
+		font-size: 19px
+	}
+	.service-price-list {
+		padding-inline: 22px
+	}
+	.service-price-row {
+		gap: 14px
+	}
+	.service-price-row dt {
+		font-size: 13px
+	}
+	.service-price-row dd {
+		font-size: 16px
+	}
+}
+
+@media (max-width:767px) {
+	.mobile-menu {
+		overflow-y: auto
+	}
+	.service-preview-grid,.services-grid {
+		grid-template-columns: 1fr;
+		gap: 14px
+	}
+	.service-preview-card {
+		padding: 24px
+	}
+	.service-preview-card h3 {
+		font-size: 23px;
+		margin-top: 22px;
+		max-width: none
+	}
+	.service-preview-bottom {
+		padding-top: 22px
+	}
+	.services-intro {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 22px;
+		padding-bottom: 28px
+	}
+	.services-intro p {
+		font-size: 14px
+	}
+	.service-group summary {
+		padding: 21px 18px;
+		gap: 12px
+	}
+	.service-group summary h2 {
+		font-size: 19px
+	}
+	.service-price-list {
+		padding: 0 18px 6px
+	}
+	.service-price-row {
+		gap: 14px;
+		padding-block: 17px
+	}
+	.service-price-row dt {
+		font-size: 13px
+	}
+	.service-price-row dd {
+		font-size: 17px
+	}
+	.service-price-row dt span {
+		font-size: 11px
+	}
+	.service-contact {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 25px;
+		margin-top: 30px;
+		padding-block: 28px
+	}
+	.service-contact h2 {
+		font-size: 28px
+	}
+	.service-contact .eyebrow {
+		font-size: 10px;
+		letter-spacing: 1.3px
+	}
+	.service-contact p {
+		font-size: 12px
+	}
+	.services-page {
+		padding-bottom: 40px
+	}
+	.cart-page {
+		min-height: 380px;
+		padding-bottom: 48px
+	}
+	.cart-page>.empty-state {
+		min-height: 320px;
+		padding: 35px 20px
+	}
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	#filters-form {
+		display: contents
+	}
+}
+
+@media (max-width:767px) {
+	.guide-number {
+		flex-wrap: wrap;
+		gap: 15px 20px;
+		font-size: 36px
+	}
+	.guide-number span {
+		padding-left: 18px;
+		max-width: 130px
+	}
+}
+
+.card,.location-card {
+	border-radius: var(--radius-lg)
+}
+
+.finder,.season-tile,.cart-summary,.info-block,.empty-state,.order-success {
+	border-radius: var(--radius)
+}
+
+.search-dialog {
+	border-radius: var(--radius-panel)
+}
+
+.product-photo {
+	border-radius: var(--radius-lg);
+	overflow: hidden
+}
+
+.card-visual {
+	border-radius: 0
+}
+
+.cart-row img {
+	border-radius: var(--radius-sm)
+}
+
+.badge,.filter-chip,.toast {
+	border-radius: var(--radius-sm)
+}
+
+.check-label input {
+	border-radius: var(--radius-check);
+	overflow: hidden
+}
+
+.quantity {
+	overflow: hidden
+}
+
+@media (max-width:767px) {
+	.hero-actions {
+		flex-wrap: wrap
+	}
+	.hero-actions .button {
+		flex: 1;
+		gap: 10px;
+		padding-inline: 12px
+	}
+	.product-buy {
+		flex-wrap: wrap
+	}
+	.catalog-toolbar {
+		align-items: flex-start
+	}
+	.catalog-toolbar label {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		flex-wrap: wrap
+	}
+	.filters,.mobile-menu {
+		border-radius: 0
+	}
+}
+
+.season-tile .tile-arrow {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: auto;
+	width: 24px;
+	height: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--muted);
+	transition: color .2s,transform .2s
+}
+
+.tile-arrow svg {
+	width: 21px;
+	height: 21px;
+	transform: rotate(-45deg)
+}
+
+.season-tile:hover .tile-arrow,.season-tile:focus-visible .tile-arrow {
+	color: var(--text);
+	transform: translate(2px,-2px)
+}
+
+@media (max-width:991px) {
+	.season-tile .tile-arrow {
+		top: 24px;
+		right: 24px
+	}
+}

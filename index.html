@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Шин-Мастер — шиномонтаж в Москве</title>
+		<link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="stylesheet" href="assets/css/responsive.css">
+		<link rel="stylesheet" href="assets/css/components.css">
+		<script src="assets/js/core.js" defer></script>
+		<script src="assets/js/data.js" defer></script>
+		<script src="assets/js/components.js" defer></script>
+		<script src="assets/js/pages.js" defer></script>
+		<script src="assets/js/app.js" defer></script>
+	</head>
+	<body>
+		<a class="skip-link" href="#main">Перейти к содержимому</a>
+		<div class="topline">
+			<div class="container">
+				<span>ТОЧНОЕ СЦЕПЛЕНИЕ. ПРАВИЛЬНЫЙ ВЫБОР.</span>
+				<span>Шины и шиномонтаж в Москве</span>
+			</div>
+		</div>
+		<header class="header">
+			<div class="container header-inner">
+				<a class="logo" href="#home" aria-label="Шин-Мастер — главная">
+					<span class="logo-mark" aria-hidden="true">
+						<i></i>
+						<i></i>
+						<i></i>
+					</span>ШИН-МАСТЕР<span class="logo-dot">®</span>
+				</a>
+				<nav class="desktop-nav" aria-label="Основная навигация">
+					<a href="#home">Главная</a>
+					<a href="#services">Шиномонтаж</a>
+					<a href="#catalog">Шины</a>
+					<a href="#about">О компании</a>
+					<a href="#contacts">Контакты</a>
+				</nav>
+				<div class="header-actions">
+					<button class="icon-button" data-action="search" aria-label="Поиск шин" title="Поиск">
+						<svg>
+							<use href="#i-search"/>
+						</svg>
+					</button>
+					<button class="icon-button theme-button" data-action="theme" aria-label="Включить светлую тему" title="Сменить тему">
+						<svg>
+							<use href="#i-sun"/>
+						</svg>
+					</button>
+					<a class="icon-button" href="#favorites" aria-label="Избранное" title="Избранное">
+						<svg>
+							<use href="#i-heart"/>
+						</svg>
+						<span class="small-count" id="favorite-count" hidden>0</span>
+					</a>
+					<a class="icon-button cart-icon" href="#cart" aria-label="Корзина" title="Корзина">
+						<svg>
+							<use href="#i-bag"/>
+						</svg>
+						<span class="cart-count" id="cart-count">0</span>
+					</a>
+					<button class="icon-button menu-button" data-action="menu" aria-label="Открыть меню" aria-expanded="false">
+						<svg>
+							<use href="#i-menu"/>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main id="main" tabindex="-1"></main>
+		<footer class="footer" id="footer">
+			<div class="container footer-main">
+				<div>
+					<a class="logo" href="#home" aria-label="Шин-Мастер — главная">
+						<span class="logo-mark" aria-hidden="true">
+							<i></i>
+							<i></i>
+							<i></i>
+						</span>ШИН-МАСТЕР<span class="logo-dot">®</span>
+					</a>
+					<p>Уверенность начинается<br>с правильных шин.</p>
+				</div>
+				<div>
+					<span class="footer-label">ШИНЫ И УСЛУГИ</span>
+					<a href="#services">Шиномонтаж и цены</a>
+					<a href="#catalog">Каталог шин</a>
+					<a href="#favorites">Избранное</a>
+					<a href="#cart">Корзина</a>
+				</div>
+				<div>
+					<span class="footer-label">ИНФОРМАЦИЯ</span>
+					<a href="#about">О компании</a>
+					<a href="#guide">Как выбрать шины</a>
+					<a href="#delivery">Доставка и возврат</a>
+				</div>
+				<div class="footer-contacts">
+					<span class="footer-label">НА СВЯЗИ</span>
+					<a href="tel:+79032143213">+7 (903) 214-32-13</a>
+					<a href="mailto:rabochiiacaunt@mail.ru">rabochiiacaunt@mail.ru</a>
+				</div>
+				<div class="footer-locations">
+					<div>
+						<span class="footer-label">ШИНОМОНТАЖ 01</span>
+						<address>г. Москва, 2-й Иртышский проезд,<br>д. 16, стр. 1</address>
+						<a class="route-link" href="https://yandex.ru/maps/?rtext=~Москва%2C%202-й%20Иртышский%20проезд%2C%2016%2C%20стр.%201&amp;rtt=auto" target="_blank" rel="noopener noreferrer">Построить маршрут ↗</a>
+					</div>
+					<div>
+						<span class="footer-label">ШИНОМОНТАЖ 02</span>
+						<address>г. Москва, Костомаровская<br>набережная, 29А</address>
+						<a class="route-link" href="https://yandex.ru/maps/?rtext=~Москва%2C%20Костомаровская%20набережная%2C%2029А&amp;rtt=auto" target="_blank" rel="noopener noreferrer">Построить маршрут ↗</a>
+					</div>
+				</div>
+			</div>
+			<div class="container footer-bottom">
+				<span>© 2026 Шин-Мастер. Все права защищены.</span>
+				<span>Шины и шиномонтаж в Москве.</span>
+			</div>
+		</footer>
+		<div class="overlay" id="overlay" hidden></div>
+		<aside class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Меню" hidden>
+			<div class="panel-heading">
+				<strong>МЕНЮ</strong>
+				<button class="icon-button" data-action="close" aria-label="Закрыть меню">
+					<svg>
+						<use href="#i-close"/>
+					</svg>
+				</button>
+			</div>
+			<nav>
+				<a href="#home">Главная <span>01</span>
+				</a>
+				<a href="#services">Шиномонтаж <span>02</span>
+				</a>
+				<a href="#catalog">Шины <span>03</span>
+				</a>
+				<a href="#about">О компании <span>04</span>
+				</a>
+				<a href="#contacts">Контакты <span>05</span>
+				</a>
+				<a href="#favorites">Избранное <svg>
+						<use href="#i-heart"/>
+					</svg>
+				</a>
+			</nav>
+			<button class="button secondary" data-action="theme" style="margin-top:30px">Сменить тему <svg>
+					<use href="#i-sun"/>
+				</svg>
+			</button>
+		</aside>
+		<dialog id="search-dialog" class="search-dialog">
+			<form id="search-form">
+				<div class="panel-heading">
+					<label for="site-search">НАЙДИТЕ СВОИ ШИНЫ</label>
+					<button type="button" class="icon-button" data-action="close-search" aria-label="Закрыть поиск">
+						<svg>
+							<use href="#i-close"/>
+						</svg>
+					</button>
+				</div>
+				<div class="search-input">
+					<svg>
+						<use href="#i-search"/>
+					</svg>
+					<input id="site-search" name="q" placeholder="Бренд, модель или размер, например 225/45 R17" autocomplete="off">
+					<button class="button primary" type="submit">Найти <span>↗</span>
+					</button>
+				</div>
+				<p>Ищите среди 32 моделей Michelin, Pirelli, Continental и других брендов.</p>
+			</form>
+		</dialog>
+		<div class="toast" id="toast" role="status" aria-live="polite"></div>
+		<svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+			<defs>
+				<symbol id="i-search" viewBox="0 0 24 24">
+					<circle cx="10.5" cy="10.5" r="6.5"/>
+					<path d="m16 16 5 5"/>
+				</symbol>
+				<symbol id="i-heart" viewBox="0 0 24 24">
+					<path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0L12 6l-1.1-1.2a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z"/>
+				</symbol>
+				<symbol id="i-bag" viewBox="0 0 24 24">
+					<path d="M5 7h14l1 14H4L5 7Z"/>
+					<path d="M8 9V6a4 4 0 0 1 8 0v3"/>
+				</symbol>
+				<symbol id="i-sun" viewBox="0 0 24 24">
+					<circle cx="12" cy="12" r="4"/>
+					<path d="M12 1v2m0 18v2M1 12h2m18 0h2M4.2 4.2l1.4 1.4m12.8 12.8 1.4 1.4M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/>
+				</symbol>
+				<symbol id="i-menu" viewBox="0 0 24 24">
+					<path d="M3 6h18M3 12h18M3 18h18"/>
+				</symbol>
+				<symbol id="i-close" viewBox="0 0 24 24">
+					<path d="m6 6 12 12M18 6 6 18"/>
+				</symbol>
+				<symbol id="i-arrow" viewBox="0 0 24 24">
+					<path d="M5 12h14m-6-6 6 6-6 6"/>
+				</symbol>
+				<symbol id="i-summer" viewBox="0 0 24 24">
+					<circle cx="12" cy="12" r="4"/>
+					<path d="M12 1v2m0 18v2M1 12h2m18 0h2M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"/>
+				</symbol>
+				<symbol id="i-winter" viewBox="0 0 24 24">
+					<path d="M12 2v20M3.3 7l17.4 10M3.3 17 20.7 7M9 4l3 3 3-3M9 20l3-3 3 3M3.6 10l4.1-1.1L6.6 4.8m10.8 14.4-1.1-4.1 4.1-1.1M6.6 19.2l1.1-4.1L3.6 14m16.8-4-4.1-1.1 1.1-4.1"/>
+				</symbol>
+				<symbol id="i-all" viewBox="0 0 24 24">
+					<path d="M12 3a9 9 0 1 0 9 9h-9V3Z"/>
+					<path d="M16 3v5m-2-3 4 1M20 8l2-2"/>
+				</symbol>
+				<symbol id="i-filter" viewBox="0 0 24 24">
+					<path d="M3 6h18M3 12h18M3 18h18"/>
+					<path d="M8 3v6m8 0v6M8 15v6"/>
+				</symbol>
+				<symbol id="i-check" viewBox="0 0 24 24">
+					<path d="m5 12 4 4L19 6"/>
+				</symbol>
+				<symbol id="i-shield" viewBox="0 0 24 24">
+					<path d="m12 2 8 3v6c0 5-8 11-8 11S4 16 4 11V5l8-3Z"/>
+					<path d="m8 11 3 3 5-5"/>
+				</symbol>
+				<symbol id="i-truck" viewBox="0 0 24 24">
+					<path d="M2 5h12v12H2V5Zm12 5h4l4 4v3h-8"/>
+					<circle cx="6" cy="18" r="2"/>
+					<circle cx="18" cy="18" r="2"/>
+				</symbol>
+				<symbol id="i-box" viewBox="0 0 24 24">
+					<path d="m12 2 10 5v10l-10 5-10-5V7l10-5Zm0 10v10M2 7l10 5 10-5M7 4.5l10 5V15"/>
+				</symbol>
+				<symbol id="i-trash" viewBox="0 0 24 24">
+					<path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7m4-7v7"/>
+				</symbol>
+			</defs>
+		</svg>
+	</body>
+</html>
